@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Tareas</h1>
+
+        <!-- Formulario para crear o actualizar tarea -->
+        <div id="formulario">
+            <input type="text" id="titulo" placeholder="Título de la tarea" />
+            <textarea id="descripcion" placeholder="Descripción (opcional)"></textarea>
+            <input type="date" id="fecha_vencimiento" />
+            <select id="estado">
+                <option value="pendiente">Pendiente</option>
+                <option value="en progreso">En progreso</option>
+                <option value="completada">Completada</option>
+            </select>
+            <button id="agregar">Agregar Tarea</button>
+        </div>
+
+        <!-- Lista de tareas -->
+        <ul id="lista-tareas"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
